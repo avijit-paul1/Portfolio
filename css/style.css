@@ -68,8 +68,8 @@ nav{
     top: 0;
     height: 100vh;
     background:brown;
-    clip-path: circle(1000px at 0% -15%);
-    -webkit-clip-path:circle(1000px at 0% -15%);
+    clip-path: circle(1000px at 0% -25%);
+    -webkit-clip-path:circle(1000px at 0% -25%);
     transition:all 1s ease-out;
     z-index: 5;
 }
@@ -78,8 +78,10 @@ nav{
     grid-template-columns: 25% 75%;
 }
 .con_nav{
+    display: flex;
+    align-items: center;
     width: 75%;
-    height: 6vh;
+    height: 9vh;
     background: brown;
     position: fixed;
     top: 0;
@@ -466,6 +468,7 @@ nav{
 .footer p{
     color: white;
     text-align: center;
+    padding: 15px;
 }
 .so_link{
     width: 150px;
@@ -496,10 +499,11 @@ nav{
 /* icon */
 
 .fa-bars{
+    
     color: white;
     font-size: 22px;
-    line-height: 39px;
-    margin-left: 15px;
+    /* line-height: 65px; */
+    margin-left: 20px;
     cursor: pointer;
 }
 .fa-phone-alt{
@@ -521,16 +525,16 @@ nav{
 
 @media screen and (max-width:1020px){
     .nav{
-        clip-path: circle(1000px at 0% -15%);
-        -webkit-clip-path:circle(1000px at 0% -15%);
+        clip-path: circle(1000px at 0% -25%);
+        -webkit-clip-path:circle(1000px at 0% -25%);
     }
     .con_nav{
         visibility: visible;
     }
     nav{
         width: 300px;
-        clip-path: circle(100px at 0% -15%);
-        -webkit-clip-path:circle(100px at 0% -15%);
+        clip-path: circle(100px at 0% -25%);
+        -webkit-clip-path:circle(100px at 0% -25%);
     }
     .container{
         display:grid;
@@ -558,6 +562,15 @@ nav{
     .form_info{
         width: 90%;
         margin: auto;
+    }
+    #aboutMe{
+        margin-bottom: 60px;
+    }
+    #services{
+        margin-bottom: 60px; 
+    }
+    #skills{
+        margin-bottom: 60px; 
     }
 }
 @media screen and (max-width:890px){
