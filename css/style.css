@@ -4,9 +4,6 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-body{
-    background: rgb(236, 226, 226);
-}
 html{
     scroll-behavior: smooth;
 }
@@ -37,7 +34,7 @@ html{
     transition: .5s;
 }
 .active{
-    background: rgb(143, 20, 20);
+    background: rgb(63, 9, 9);
 }
 .menu li a:hover{
     color: rgb(0, 180, 252);
@@ -67,7 +64,7 @@ nav{
     left: 0;
     top: 0;
     height: 100vh;
-    background:brown;
+    background:rgb(107, 12, 12);
     clip-path: circle(1000px at 0% -25%);
     -webkit-clip-path:circle(1000px at 0% -25%);
     transition:all 1s ease-out;
@@ -82,7 +79,7 @@ nav{
     align-items: center;
     width: 75%;
     height: 9vh;
-    background: brown;
+    background: rgb(107, 12, 12);
     position: fixed;
     top: 0;
     left: 25%;
@@ -91,8 +88,10 @@ nav{
 }
 .main_content{
     padding: 10px;
-    background: rgb(236, 226, 226);
+    /* background: rgb(236, 226, 226); */
     min-width:320px;
+    background:linear-gradient(rgb(204, 119, 7),rgb(110, 209, 115),rgba(97, 135, 206, 0.616)30%,rgb(110, 209, 115),rgb(204, 119, 7));
+    
 }
  .p_pic{
      width: 164px;
@@ -131,7 +130,7 @@ nav{
      text-decoration: none;
      width: 35px;
      height: 35px;
-     background: rgb(201, 98, 98);
+     background: rgb(201, 59, 59);
      border-radius: 50%;
      text-align: center;
      line-height:35px;
@@ -158,7 +157,7 @@ nav{
      transition: .8s;
  }
  .dw_btn:hover{
-    background: rgb(236, 226, 226);
+    background: transparent;
     color: brown;
  }
  #about{
@@ -254,7 +253,7 @@ nav{
     height: 50px;
     background: brown;
     text-align: center;
-    color: white;
+    color:rgb(236, 226, 226);
     margin: auto;
     border-radius: 100%;
     line-height: 50px;
@@ -266,7 +265,7 @@ nav{
 }
 .service:hover{
     cursor: pointer;
-    background: brown;
+    background: rgb(107, 12, 12);
     color:rgb(236, 226, 226);
     transform: scale(.96);
 }
@@ -379,13 +378,13 @@ nav{
      width: 50px;
  }
  .f_row:hover ,.s_row:hover{
-    background: rgb(224, 180, 180);
+    background: rgba(32, 115, 136, 0.452);
     cursor: pointer;
     transition:.5s;
  }
  .t_head{
      background: brown;
-     color: white;
+     color: rgb(236, 226, 226);
  }
  .form{
     width: 100%;
@@ -397,30 +396,35 @@ nav{
      padding: 15px;
      margin-bottom: 20px;
      border-radius: 5px;
-     background: rgb(216, 196, 196);
+     background: rgb(196, 172, 172);
      font-size: 20px;
      border: none;
      outline: none;
+     transition: .3s;
  }
  .form input:focus{
+     outline: none;
     border: 2px solid brown;
+    box-shadow: 0 0 8px 0 brown;
  }
  .form textarea:focus{
     border: 2px solid brown;
+    box-shadow: 0 0 8px 0 brown;
  }
  .form input[type='submit']{
      width: 200px;
-     background: brown;
-     color: white;
+     background: rgb(107, 12, 12);
+     color:rgb(236, 226, 226);
      font-size:16px;
-     border: 3px solid brown;
+     border: 3px solid rgb(107, 12, 12);
      cursor: pointer;
      transition:.8s;
      font-weight: bold;
  }
  .form input[type='submit']:hover{
-    background:rgb(236, 226, 226);
-    color: brown;
+    background:transparent;
+    color: rgb(107, 12, 12);
+    box-shadow: 0 0 8px 0 brown;
  }
  .contact{
      width: 100%;
@@ -460,13 +464,13 @@ nav{
     border-radius: 10px;
 }
 .footer h1{
-    color: white;
+    color: rgb(236, 226, 226);
     text-align: center;
     padding-top: 50px;
     margin-bottom: 20px;
 }
 .footer p{
-    color: white;
+    color: rgb(236, 226, 226);
     text-align: center;
     padding: 15px;
 }
@@ -478,7 +482,7 @@ nav{
     margin-top: 20px;
 }
 .so_link a{
-    color: white;
+    color: rgb(236, 226, 226);
      text-decoration: none;
      width: 35px;
      height: 35px;
@@ -500,7 +504,7 @@ nav{
 
 .fa-bars{
     
-    color: white;
+    color: rgb(236, 226, 226);
     font-size: 22px;
     /* line-height: 65px; */
     margin-left: 20px;
@@ -587,7 +591,7 @@ nav{
         min-width: 262px;
     }
     .form{
-        min-width: 300px;
+        min-width: 250px;
     }
     .con_info{
         min-width: 300px;
@@ -628,8 +632,19 @@ nav{
     }
 }
 @media screen and (max-width:450px){
-   
     .table thead th,td{
-        padding: 2px;
+        padding: 5px;
+    }
+    .form{
+        width: 250px;
+    }
+    .del{
+        display: none;
+    }
+    .form input[type='submit']{
+        width: 100%;
+    }
+    .t_last_col{
+        width: 80px;
     }
 }
