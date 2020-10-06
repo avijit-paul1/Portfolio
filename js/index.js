@@ -5,6 +5,9 @@ $(document).ready(function(){
     $(".nav_link").click(function(){
         $("nav").removeClass("nav");
     });
+    $(".main_content").click(function(){
+        $("nav").removeClass("nav");
+    });
 
     $(".nav_link").click(function(){
         $(this).addClass("active").siblings().removeClass("active");
