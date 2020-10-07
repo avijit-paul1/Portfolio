@@ -238,7 +238,7 @@ nav{
     height: 250px;
     text-align: center;
     padding: 10px;
-    border: 2px solid brown;
+    border: 2px solid rgb(107, 12, 12);
     border-radius: 10px;
     transition: .5s;
     margin: auto;
@@ -632,6 +632,9 @@ nav{
     }
 }
 @media screen and (max-width:450px){
+    nav{
+        width: 220px;
+    }
     .table thead th,td{
         padding: 5px;
     }
